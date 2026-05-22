@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>How To Crack WBJEE In One Day 😱</title>
 
 <style>
@@ -26,38 +27,38 @@ body{
     position:relative;
 }
 
-/* Animated Background */
+/* Premium Animated Background */
 
-body::before,
-body::after{
-    content:'';
+.bg1,
+.bg2{
     position:absolute;
     width:500px;
     height:500px;
     border-radius:50%;
     filter:blur(120px);
-    opacity:0.5;
-    animation:move 10s infinite alternate;
+    opacity:0.4;
+    animation:float 8s ease-in-out infinite alternate;
 }
 
-body::before{
+.bg1{
     background:#ff0066;
-    top:-100px;
+    top:-120px;
     left:-100px;
 }
 
-body::after{
+.bg2{
     background:#0066ff;
-    bottom:-100px;
+    bottom:-120px;
     right:-100px;
 }
 
-@keyframes move{
+@keyframes float{
     from{
-        transform:translate(0,0);
+        transform:translateY(0px) translateX(0px);
     }
+
     to{
-        transform:translate(80px,50px);
+        transform:translateY(40px) translateX(40px);
     }
 }
 
@@ -67,126 +68,137 @@ body::after{
     max-width:900px;
 }
 
-h1{
-    font-size:60px;
+.logo{
+    font-size:14px;
+    letter-spacing:4px;
+    color:#999;
     margin-bottom:20px;
+}
+
+h1{
+    font-size:65px;
+    margin-bottom:20px;
+    line-height:1.2;
 }
 
 .sub{
     color:#bdbdbd;
     font-size:22px;
     margin-bottom:40px;
+    line-height:1.6;
 }
 
 .loading{
-    font-size:18px;
     color:#00ffcc;
-    margin-bottom:30px;
+    font-size:18px;
     height:30px;
+    margin-bottom:40px;
+    font-family:monospace;
 }
 
 button{
-    padding:18px 40px;
-    font-size:22px;
+    padding:18px 42px;
     border:none;
     border-radius:15px;
     background:linear-gradient(45deg,#ff0066,#ff6600);
     color:white;
+    font-size:20px;
     cursor:pointer;
     transition:0.3s;
-    box-shadow:0 0 25px rgba(255,0,100,0.5);
+    box-shadow:0 0 25px rgba(255,0,100,0.35);
 }
 
 button:hover{
-    transform:scale(1.08);
+    transform:translateY(-3px);
 }
 
-#truth{
-    display:none;
+#result{
     margin-top:60px;
-    animation:glitch 0.3s infinite;
+    display:none;
+    animation:fadeIn 1.2s ease;
 }
 
-#truth h2{
-    font-size:55px;
+#result h2{
+    font-size:52px;
     line-height:1.5;
     color:#ffcc00;
 }
 
-.small{
-    margin-top:20px;
-    color:#ccc;
+#result p{
+    margin-top:25px;
+    color:#cccccc;
     font-size:22px;
 }
 
-@keyframes glitch{
-    0%{transform:translate(0);}
-    20%{transform:translate(-3px,3px);}
-    40%{transform:translate(-3px,-3px);}
-    60%{transform:translate(3px,3px);}
-    80%{transform:translate(3px,-3px);}
-    100%{transform:translate(0);}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0px);
+    }
 }
 
-.shake{
-    animation:shake 0.15s infinite;
-}
-
-@keyframes shake{
-    0%{transform:translate(2px,1px);}
-    25%{transform:translate(-2px,-1px);}
-    50%{transform:translate(2px,-2px);}
-    75%{transform:translate(-2px,2px);}
-    100%{transform:translate(2px,1px);}
-}
-
-.fake-terminal{
-    margin-top:30px;
+.terminal{
+    margin-top:35px;
     color:#00ff88;
-    font-size:18px;
+    font-size:17px;
     font-family:monospace;
+    line-height:1.8;
 }
 
 footer{
     position:absolute;
-    bottom:20px;
-    color:#777;
-    font-size:14px;
+    bottom:18px;
+    font-size:13px;
+    color:#666;
 }
 
 </style>
-    <audio id="sadAudio" src="sad.mp3"></audio>
 </head>
 
 <body>
 
+<div class="bg1"></div>
+<div class="bg2"></div>
+
 <div class="container">
 
-    <h1>How To Crack WBJEE In One Day 😱</h1>
+    <div class="logo">
+        WBJEE AI ANALYZER
+    </div>
+
+    <h1>
+        How To Crack WBJEE <br> In One Day 😱
+    </h1>
 
     <p class="sub">
-        Secret strategy used by AIR under 100 students...
+        AI-powered last minute strategy used by toppers.<br>
+        Special emergency guidance for tomorrow's exam.
     </p>
 
     <div class="loading" id="loadingText">
-        Initializing AI Rank Booster...
+        Initializing Rank Prediction Engine...
     </div>
 
-    <button onclick="revealTruth()">
+    <button onclick="startAnalysis()">
         Reveal Secret Strategy
     </button>
 
-    <div class="fake-terminal" id="terminal"></div>
+    <div class="terminal" id="terminal"></div>
 
-    <div id="truth">
+    <div id="result">
 
         <h2>
-            Thoda sa bhi padh leta <br>
+            Thoda sa bhi padh leta... <br>
             to aaj yeh din nahi dekhna padta bete 🙂
         </h2>
 
-        <p class="small">
-            Better Luck For WBJEE 2027 💀
+        <p>
+            Anyway... Best of luck for WBJEE 🤝
         </p>
 
     </div>
@@ -194,49 +206,64 @@ footer{
 </div>
 
 <footer>
-Made with pain, regret & last-night motivation 💔
+Made with last-night panic & emotional damage 💔
 </footer>
+
+<!-- Background Audio -->
+<audio id="sadMusic" loop>
+    <source src="sad.mp3" type="audio/mp3">
+</audio>
 
 <script>
 
 const loadingMessages = [
-    "Initializing AI Rank Booster...",
-    "Connecting to IIT Server...",
-    "Decrypting AIR 1 Strategy...",
-    "Analyzing Toppers Brain...",
-    "Injecting Physics Formula...",
-    "Calculating JEE Trauma...",
+
+    "Initializing Rank Prediction Engine...",
+    "Connecting to IIT Kharagpur Server...",
+    "Analyzing AIR 1 Preparation...",
+    "Scanning Physics Confidence...",
+    "Calculating Sleep Sacrifice...",
+    "Decrypting Toppers Strategy..."
+
 ];
 
-let index = 0;
+let msgIndex = 0;
 
 setInterval(() => {
 
     document.getElementById("loadingText")
-        .innerText = loadingMessages[index];
+        .innerText = loadingMessages[msgIndex];
 
-    index++;
+    msgIndex++;
 
-    if(index >= loadingMessages.length){
-        index = 0;
+    if(msgIndex >= loadingMessages.length){
+        msgIndex = 0;
     }
 
-},1500);
+},1800);
 
 
-function revealTruth(){
+function startAnalysis(){
 
-    document.body.classList.add("shake");
+    document.querySelector("button").style.display = "none";
+
+    // Play background audio
+    document.getElementById("sadMusic").play();
 
     const terminal = document.getElementById("terminal");
 
     const lines = [
-        "Accessing hidden strategy...",
-        "Loading motivation...",
-        "Checking study hours...",
+
+        "Checking study progress...",
+        "Analyzing mock test performance...",
+        "Comparing with toppers...",
+        "Finding secret strategy...",
+        "Processing final result...",
+        "",
         "ERROR ❌",
-        "Study data not found.",
-        "Too late bro 💀"
+        "Emergency preparation not found.",
+        "",
+        "Generating honest feedback..."
     ];
 
     let i = 0;
@@ -248,17 +275,18 @@ function revealTruth(){
         i++;
 
         if(i >= lines.length){
+
             clearInterval(interval);
 
             setTimeout(() => {
 
-                document.getElementById("truth")
+                document.getElementById("result")
                     .style.display = "block";
 
-            },1000);
+            },1200);
         }
 
-    },800);
+    },850);
 
 }
 
