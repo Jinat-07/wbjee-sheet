@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How To Crack WBJEE In One Day 😱</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050505;
+    color:white;
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+/* Animated Background */
+
+body::before,
+body::after{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:0.5;
+    animation:move 10s infinite alternate;
+}
+
+body::before{
+    background:#ff0066;
+    top:-100px;
+    left:-100px;
+}
+
+body::after{
+    background:#0066ff;
+    bottom:-100px;
+    right:-100px;
+}
+
+@keyframes move{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(80px,50px);
+    }
+}
+
+.container{
+    z-index:2;
+    width:90%;
+    max-width:900px;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.sub{
+    color:#bdbdbd;
+    font-size:22px;
+    margin-bottom:40px;
+}
+
+.loading{
+    font-size:18px;
+    color:#00ffcc;
+    margin-bottom:30px;
+    height:30px;
+}
+
+button{
+    padding:18px 40px;
+    font-size:22px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(45deg,#ff0066,#ff6600);
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 0 25px rgba(255,0,100,0.5);
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+#truth{
+    display:none;
+    margin-top:60px;
+    animation:glitch 0.3s infinite;
+}
+
+#truth h2{
+    font-size:55px;
+    line-height:1.5;
+    color:#ffcc00;
+}
+
+.small{
+    margin-top:20px;
+    color:#ccc;
+    font-size:22px;
+}
+
+@keyframes glitch{
+    0%{transform:translate(0);}
+    20%{transform:translate(-3px,3px);}
+    40%{transform:translate(-3px,-3px);}
+    60%{transform:translate(3px,3px);}
+    80%{transform:translate(3px,-3px);}
+    100%{transform:translate(0);}
+}
+
+.shake{
+    animation:shake 0.15s infinite;
+}
+
+@keyframes shake{
+    0%{transform:translate(2px,1px);}
+    25%{transform:translate(-2px,-1px);}
+    50%{transform:translate(2px,-2px);}
+    75%{transform:translate(-2px,2px);}
+    100%{transform:translate(2px,1px);}
+}
+
+.fake-terminal{
+    margin-top:30px;
+    color:#00ff88;
+    font-size:18px;
+    font-family:monospace;
+}
+
+footer{
+    position:absolute;
+    bottom:20px;
+    color:#777;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>How To Crack WBJEE In One Day 😱</h1>
+
+    <p class="sub">
+        Secret strategy used by AIR under 100 students...
+    </p>
+
+    <div class="loading" id="loadingText">
+        Initializing AI Rank Booster...
+    </div>
+
+    <button onclick="revealTruth()">
+        Reveal Secret Strategy
+    </button>
+
+    <div class="fake-terminal" id="terminal"></div>
+
+    <div id="truth">
+
+        <h2>
+            Thoda sa bhi padh leta <br>
+            to aaj yeh din nahi dekhna padta bete 🙂
+        </h2>
+
+        <p class="small">
+            Better Luck For WBJEE 2027 💀
+        </p>
+
+    </div>
+
+</div>
+
+<footer>
+Made with pain, regret & last-night motivation 💔
+</footer>
+
+<script>
+
+const loadingMessages = [
+    "Initializing AI Rank Booster...",
+    "Connecting to IIT Server...",
+    "Decrypting AIR 1 Strategy...",
+    "Analyzing Toppers Brain...",
+    "Injecting Physics Formula...",
+    "Calculating JEE Trauma...",
+];
+
+let index = 0;
+
+setInterval(() => {
+
+    document.getElementById("loadingText")
+        .innerText = loadingMessages[index];
+
+    index++;
+
+    if(index >= loadingMessages.length){
+        index = 0;
+    }
+
+},1500);
+
+
+function revealTruth(){
+
+    document.body.classList.add("shake");
+
+    const terminal = document.getElementById("terminal");
+
+    const lines = [
+        "Accessing hidden strategy...",
+        "Loading motivation...",
+        "Checking study hours...",
+        "ERROR ❌",
+        "Study data not found.",
+        "Too late bro 💀"
+    ];
+
+    let i = 0;
+
+    let interval = setInterval(() => {
+
+        terminal.innerHTML += lines[i] + "<br>";
+
+        i++;
+
+        if(i >= lines.length){
+            clearInterval(interval);
+
+            setTimeout(() => {
+
+                document.getElementById("truth")
+                    .style.display = "block";
+
+            },1000);
+        }
+
+    },800);
+
+}
+
+</script>
+
+</body>
+</html>
